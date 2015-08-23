@@ -110,6 +110,7 @@ confusionMatrix(predict.tree, train.test$classe)
 ```
 
 The Random Forest model has a better accuracy on the validation set.
+I'm expecting an output from the Random Forest prediction model that is 0.99 accurate within a 0.95% of conifdence inerval.
 
 The prediction on the test set will be made using the Random Forest model
 
