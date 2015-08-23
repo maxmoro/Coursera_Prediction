@@ -78,6 +78,14 @@ train.train = train.good[part$Resample1]
 train.test = train.good[-part$Resample1] 
 ```
 
+## Data Analysis
+Distribution of rows per eahc level
+```{r graph}
+ggplot(data=train.train, aes(x=classe))+
+    geom_bar(fill='blue')
+```
+
+
 ## Training Models
 ```{r models, CACHE=TRUE}
 registerDoParallel(cores=8)
